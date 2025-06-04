@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VampySec Nexus</title>
+    <link rel="icon" href="s.jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('a.gif') repeat center center fixed;
+            background-size: auto;
+        }
+
+        /* Menú de navegación */
+        nav {
+            background: rgba(18, 53, 107, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            padding: 10px 0;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Secciones */
+        section {
+            padding: 80px 20px;
+            height: 100vh;
+        }
+
+        /* Fondo semitransparente en el texto */
+        section h1, section p {
+            background: rgba(0, 10, 15, 0.6);
+            color: rgb(243, 236, 236);
+            display: inline-block;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        h2{
+            color: red;
+            background-color: aliceblue;
+        }
+    </style>
 </head>
 <body>
-    <h1>Lo Lograste Perro</h1>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#inicio"><span class="icon">🏠</span> Inicio</a></li>
+            <li><a href="#descargas"><span class="icon">📥</span> Descargas</a></li>
+            <li><a href="#duel-links"><span class="icon">🃏</span> Duel Links</a></li>
+            <li><a href="#bins"><span class="icon">🛒</span> Bins</a></li>
+            <li><a href="#contacto"><span class="icon">📞</span> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Secciones -->
+    <section id="inicio">
+    <h1>⚡ Bienvenido a VampySec Nexus ⚡</h1>
+    <p>Este sitio está diseñado con <strong>fines educativos y éticos</strong>, enfocado en <strong>seguridad informática, hacking ético y ciberseguridad</strong>. Todo el conocimiento aquí compartido debe ser utilizado <strong>únicamente en entornos controlados</strong>, respetando las normativas legales y éticas.</p>
+
+    <p><strong>⚠️ Importante:</strong> No nos hacemos responsables del mal uso que se le pueda dar a la información presentada, ya que el objetivo es promover la <strong>seguridad y el aprendizaje responsable</strong>.</p>
+
+    <h2>🛡️ ¿Qué es el Hacking Ético?</h2>
+    <p>El <strong>hacking ético</strong> es la práctica de analizar, probar y fortalecer sistemas de seguridad con <strong>permiso explícito</strong>, buscando vulnerabilidades antes de que los atacantes las exploten. Los <strong>hackers éticos</strong>, también conocidos como <strong>white-hat hackers</strong>, trabajan para <strong>proteger la información</strong> y mejorar la seguridad de redes y aplicaciones.</p>
+
+    <h2>🔍 ¿Y qué es la Ciberseguridad?</h2>
+    <p>La <strong>ciberseguridad</strong> abarca todas las medidas, herramientas y prácticas diseñadas para <strong>proteger sistemas, redes y datos de accesos no autorizados</strong>. Mientras que el <strong>hacking ético</strong> es una especialización dentro de la ciberseguridad, esta última es más amplia e incluye <strong>estrategias de prevención, detección y respuesta</strong> ante amenazas digitales.</p>
+
+    <p><strong>🌍 En VampySec Nexus, promovemos el aprendizaje seguro y legal</strong> para fortalecer el conocimiento y aplicar soluciones reales en el mundo de la tecnología.</p>
+    </section>
+
+    <section id="descargas">
+        <h1>Descargas</h1>
+        <p>Encuentra herramientas y recursos útiles aquí.</p>
+    </section>
+
+    <section id="duel-links">
+        <h1>Duel Links</h1>
+        <p>Información sobre Duel Links y estrategias.</p>
+    </section>
+
+    <section id="bins">
+    <h1>Bins</h1>
+    <p>Lo Mejor Pero Shh.</p>
+    </section>
+
+    <section id="contacto">
+        <h1>Contacto</h1>
+        <p>Contáctanos para dudas o colaboraciones.</p>
+    </section>
+
+    <script>
+        // Bloqueo de clic derecho y teclas específicas
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+            alert("❌ Rata Detectada!!!");
+        });
+
+        document.addEventListener("keydown", function(event) {
+            if (event.ctrlKey || event.key.startsWith("F")) {
+                event.preventDefault();
+                alert("❌ Rata Detectada!!!");
+            }
+        });
+    </script>
+
 </body>
 </html>
