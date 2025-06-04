@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="s.jpeg">
+    <title>Login | VampySec Nexus</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('a.gif') repeat center center fixed;
+    background-size: auto;
+        }
+
+
+        .container {
+            width: 300px;
+            margin: auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        input, button {
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Inicio de Sesión</h2>
+        <input type="text" id="loginUser" placeholder="Usuario">
+        <input type="password" id="loginPass" placeholder="Contraseña">
+        <button onclick="login()">Ingresar</button>
+
+        <h2>Registro</h2>
+        <input type="text" id="regUser" placeholder="Nuevo Usuario">
+        <input type="password" id="regPass" placeholder="Nueva Contraseña">
+        <button onclick="register()">Registrar</button>
+    </div>
+
+    <script>
+        function register() {
+            let user = document.getElementById("regUser").value;
+            let pass = document.getElementById("regPass").value;
+
+            if (user && pass) {
+                localStorage.setItem(user, pass);
+                alert("Registro exitoso 🎉");
+            } else {
+                alert("Completa todos los campos");
+            }
+        }
+
+        function login() {
+            let user = document.getElementById("loginUser").value;
+            let pass = document.getElementById("loginPass").value;
+            
+            let savedPass = localStorage.getItem(user);
+            
+            if (savedPass === pass) {
+                alert("Bienvenido, " + user + " 🎉");
+                window.location.href = "inicio.html"; // Redirige al usuario a inicio.html
+            } else {
+                alert("Usuario o contraseña incorrectos 😕");
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener("contextmenu", function(event) {
+    event.preventDefault(); // Bloquea clic derecho
+    alert("❌ Rata Detectada!!!.");
+
+
+});
+
+document.addEventListener("keydown", function(event) {
+    // Bloquea Ctrl + teclas, incluyendo Ctrl+U, Ctrl+Shift+I, Ctrl+S, Ctrl+P, etc.
+    if (event.ctrlKey || event.key.startsWith("F")) {
+        event.preventDefault();
+        alert("❌ Rata Detectada!!!.");
+
+
+    }
+});
+    </script>
+</body>
+</html>
