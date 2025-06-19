@@ -11,7 +11,7 @@ function register() {
 }
 
 function login() {
-    let user = document.getElementById("loginUser").value;
+    let user = document.getElementById("registerEmail").value;
     let pass = document.getElementById("loginPass").value;
     let savedPass = localStorage.getItem(user);
     if (savedPass === pass) {
