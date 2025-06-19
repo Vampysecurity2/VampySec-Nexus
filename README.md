@@ -1,2 +1,0 @@
-# VampySec-Nexus
-web
