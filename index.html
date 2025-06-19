@@ -86,6 +86,7 @@
         function register() {
             let user = document.getElementById("regUser").value;
             let pass = document.getElementById("regPass").value;
+            let email = document.getElementById("registerEmail").value;
 
             if (user && pass) {
                 localStorage.setItem(user, pass);
@@ -102,7 +103,7 @@
             let savedPass = localStorage.getItem(user);
             
             if (savedPass === pass) {
-                alert("Bienvenido, " + user + " 🎉");
+                alert("Bienvenido, " + email + " 🎉");
                 window.location.href = "inicio.html"; // Redirige al usuario a inicio.html
             } else {
                 alert("Usuario o contraseña incorrectos 😕");
