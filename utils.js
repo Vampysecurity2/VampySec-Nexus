@@ -4,6 +4,7 @@ function register() {
     if (user && pass) {
         localStorage.setItem(user, pass);
         alert("Registro exitoso 🎉");
+        window.location.href = "inicio.html"; // Redirección tras registro
     } else {
         alert("Completa todos los campos");
     }
@@ -15,7 +16,7 @@ function login() {
     let savedPass = localStorage.getItem(user);
     if (savedPass === pass) {
         alert("Bienvenido, " + user);
-        window.location.href = "inicio.html";
+        window.location.href = "inicio.html"; // Redirección tras login
     } else {
         alert("Usuario o contraseña incorrectos");
     }
