@@ -32,11 +32,17 @@ nav {
   z-index: 1000;
 }
 
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: flex;             /* Activamos Flexbox */
+  justify-content: center;   /* Centramos el contenido horizontalmente */
+  align-items: center;       /* Opcional: centra verticalmente si cambias altura */
 }
+
 
 nav ul li {
   display: inline;
