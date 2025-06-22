@@ -30,7 +30,7 @@ nav ul li a:hover {
   color: #d1d1ff;
 }
 
-/* Títulos */
+
 h1, h2, h3 {
   font-weight: 700;
   margin-top: 80px;
@@ -38,18 +38,46 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
-/* Párrafos */
+
 p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-/* Contenedor principal */
+
 .main-container {
   max-width: 800px;
   margin: 100px auto 40px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+}
+
+figure {
+  margin: 40px auto;
+  max-width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+figure img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+figure:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ddd;
+  font-size: 14px;
 }
