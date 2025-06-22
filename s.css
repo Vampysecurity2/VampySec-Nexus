@@ -78,6 +78,7 @@ p {
     0 0 6px #5d3fd3,
     0 0 10px #7f5af0,
     1px 1px 5px rgba(0, 0, 0, 0.9);
+  text-align: center;
 
   display: inline-block;
   line-height: 1.6;
@@ -130,7 +131,5 @@ figcaption {
   font-size: 14px;
 }
 
-.sub{
-  text-align: center;
-  ]
+
   
