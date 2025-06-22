@@ -1,1 +1,17 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: url('a.gif') center center fixed;
+    background-size: cover;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
+/* Menú de navegación */
+nav {
+    background: linear-gradient(to right, #122d50, #193f74);
+    position: fixed;
+    width: 100%;
+    top: 0;
+   
