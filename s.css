@@ -1,3 +1,11 @@
+body {
+  background-image: url('fondo-oscuro.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 nav {
   background: linear-gradient(to right, #122d50, #193f74);
   position: fixed;
