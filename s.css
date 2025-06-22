@@ -1,10 +1,26 @@
 body {
+  position: relative;
+  z-index: 0;
   background-image: url('f.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/* Capa oscura superpuesta para opacar el fondo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+  z-index: -1;
+  pointer-events: none;
+}
+
 
 nav {
   background: linear-gradient(to right, #122d50, #193f74);
