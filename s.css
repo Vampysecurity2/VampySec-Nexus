@@ -59,7 +59,7 @@ nav ul li a:hover {
 }
 
 /* Títulos */
-h1, h2, h3 {
+h1, h2, h3, p {
   font-weight: 700;
   margin-top: 80px;
   margin-bottom: 20px;
@@ -68,7 +68,7 @@ h1, h2, h3 {
 }
 
 /* Párrafos — aplica a TODOS */
-p {
+/*p {
   color: #a78bfa;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 14px 20px;
@@ -91,7 +91,7 @@ p:hover {
     1px 1px 5px rgba(0, 0, 0, 0.95);
   background-color: rgba(0, 0, 0, 0.7);
 }
-
+*/
 /* Contenedor principal */
 .main-container {
   max-width: 800px;
