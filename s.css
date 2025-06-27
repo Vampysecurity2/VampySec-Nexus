@@ -66,6 +66,8 @@ h1, h2, h3, p {
   color: #7f5af0;
   text-align: center;
   background-color: #2a2a2a;
+  padding: 20px; 
+  border-radius: 10px;
 }
 
 /* Párrafos — aplica a TODOS */
