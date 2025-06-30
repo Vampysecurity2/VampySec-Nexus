@@ -158,3 +158,29 @@ figcaption {
   text-shadow: none;
   transform: scale(1.05);
 }
+
+#tienda {
+  text-align: center;
+  margin-top: 12px;
+}
+
+#tienda a {
+  color: #7df;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #0ff;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0 0 6px #0ff;
+}
+
+#tienda a:hover {
+  background-color: #0ff;
+  color: #111;
+  text-shadow: none;
+  transform: scale(1.05);
+}
+
