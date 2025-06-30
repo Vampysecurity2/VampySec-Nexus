@@ -184,3 +184,25 @@ figcaption {
   transform: scale(1.05);
 }
 
+footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: right;
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+       
+        footer p {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+footer p:hover {
+            color: #007BFF;
+            cursor: pointer;
+        }
